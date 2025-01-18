@@ -66,7 +66,7 @@
   .team{
     align-items: center;
   }
-  .teateam-images{
+  .team-images{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -75,31 +75,121 @@
     font-size: 2.8rem;
     font-weight: 700;
   }
+  .feathers{
+    gap: 140px;
+  }
+.fea-title{
+  border-left: 5px solid tomato;
+  padding: 20px;
+  font-size: 2.5em;
+  font-weight: 800;
+  max-width: 450px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  
+}
+#exp-badge{
+  margin-left: -70px;
+  margin-top: -70px;
+}
+.fe-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+..fe-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+ 
+}
   .our-fea{
     margin-left: 130px;
     max-width: 500px;
   }
+  .fact{
+    border: 1px solid tomato;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .fack-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+.fact-name{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fact-description{
+  max-width: 540px;
+}
+.sponsers-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
 
+}
+.sponsors-companies{
+
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsors-companies img{
+  filter: grayscale(100%);
+}
+.afa img{
+  width: 100%;
+}
   /* ############################Z */
   @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .team{
+    .navbar, .nav-links, .team ,.feathers{
         flex-direction: column;
     }
-    .team-images{
+    .team-images, .card-container ,.sponsors-companies, .feathers{
        
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
      
       }
-      .our-fea{
+    .our-fea{
         margin-left: 20px;
+      }
+      .card-container , .sponsors-companies{
+        justify-items: center;
+        gap: 24px;
+      }
+      #exp-badge{
+        margin-left: 2px;
+        margin-top: 20px;
       }
   }
   /* #####medium-size#### */
   @media screen and (min-width:576px) and (max-width:992px){
-    .team{
+    .team ,.feathers{
         flex-direction: column;
     }
     .our-fea{
        margin: 50px auto ;
+      }
+      .card-container ,.sponsors-companies{
+       
+        grid-template-columns:repeat(2,1fr);
+     gap: 50px;
+     justify-items: center;
+      }
+      #exp-badge{
+        margin-left: 2px;
+        margin-top: 20px;
       }
   }
